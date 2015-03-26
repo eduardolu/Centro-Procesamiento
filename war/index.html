@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> Call Center </title>
+<script type="text/javascript" src="script.js"></script>
+
+<!-- hoja de estilo -->
+
+      <link rel="stylesheet" type="text/css" href="hoja-estilo.css" media="screen" />
+
+<!-- favicon -->
+
+        <link rel="shortcut icon" type="image/x-icon" href="/imagenes/firefox-ico.ico"/>
+        <link rel="icon" type="image/x-icon" href="imagenes/firefox-ico.ico"/>
+
+
+</head>
+
+
+<body>
+
+<script>
+
+    function entrar(password, usuario) {
+
+
+
+   
+    var passvalido = "1234";
+    var usuariovalido = "teleasistente";
+   
+
+    if((password == passvalido)&&(usuario == usuariovalido)){
+    
+    window.location="inicio.html";
+    alert("lkjfkldj");
+    window.location.reload(true);
+   
+
+
+    }else{
+       
+alert("Contraseña incorrecta");
+   
+
+    }
+
+}
+
+</script>
+
+
+<div style="width: 100%;">
+			<div class="line"></div>
+			<div class="topLine">
+				<div style="float: right;">
+					<a href="inicio.html"><%= ${urlLinktext} %></a>
+				</div>
+			</div>
+</div>
+<div class="container">
+    <div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="" method="POST">
+                    <input name="user"  type="text" placeholder="username">
+                    <input type="password" name="pass" placeholder="password">
+                    <button class="btn btn-info btn-block login" onClick="entrar(this.form.pass.value, this.form.user.value)" type="submit">Login</button>
+
+                 
+                </form>
+            </div>
+        </div>
+        
+</div>
+
+</body>
+
+</html>
